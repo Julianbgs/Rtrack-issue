@@ -1,30 +1,128 @@
 header.header
-  .header__left
-    .header__logo
-      img(src="images/header/logo.svg")
-    nav.header__navigation
-      ul.header__menu
-        li.header__item
-          a(href="javascript:void(0)").header__link.header__link-dropdown
-            | Проекты
-        li.header__item
-          a(href="javascript:void(0)").header__link
-            | Задачи для меня
-        li.header__item
-          a(href="javascript:void(0)").header__link
-            | База знаний
-        li.header__item
-          a(href="javascript:void(0)").header__link
-            | Все задачи
-        li.header__item
-          a(href="javascript:void(0)").header__link
-            | Просмотренные
-  .header__information
-    .header__notifications
-      .header__notification
-        img(src="images/header/star.svg")
-      .header__notification
-        img(src="images/header/notification.svg")
-    .header__user
-      .header__user-inage
-        img(src="images/header/avatar.png")
+  .header__container
+    .header__left
+      .header__logo
+        img(src="images/header/logo.svg")
+      nav.header__navigation
+        ul.header__menu
+          li.header__item
+            .header__dropdown-projects
+              a(href="javascript:void(0)").header__link.header__link-dropdown
+                | Проекты
+              .header__projects-list
+                .header__projects-wrapper
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/active-star.svg")
+                      span.header__project
+                        | RS digital
+                    .header__projects-right
+                      span.header__active-count
+                        | 4
+                      span.header__all-count
+                        | 5
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/active-star.svg")
+                      span.header__project
+                        | Rocketware
+                    .header__projects-right
+                      span.header__active-count
+                        | 4
+                      span.header__all-count
+                        | 12
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/active-star.svg")
+                      span.header__project
+                        | Самообразование
+                    .header__projects-right
+                      span.header__all-count
+                        | 10
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/gray-star.svg")
+                      span.header__project
+                        | Mecto.ru
+                    .header__projects-right
+                      span.header__all-count
+                        | 45
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/gray-star.svg")
+                      span.header__project
+                        | Travel-promo
+                    .header__projects-right
+                      span.header__active-count
+                        | 22
+                      span.header__all-count
+                        | 8
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/gray-star.svg")
+                      span.header__project
+                        | B2B оружие
+                    .header__projects-right
+                      span.header__active-count
+                        | 9
+                      span.header__all-count
+                        | 30
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/gray-star.svg")
+                      span.header__project
+                        | Кинотеатр "Москва"
+                    .header__projects-right
+                      span.header__all-count
+                        | 54
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/gray-star.svg")
+                      span.header__project
+                        | Insberra
+                    .header__projects-right
+                      span.header__active-count
+                        | 3
+                      span.header__all-count
+                        | 15
+                  .header__projects-item
+                    .header__projects-left
+                      a(href="javascript:void(0)").header__projects-star
+                        img(src="images/header/gray-star.svg")
+                      span.header__project
+                        | Vinogradniy
+                    .header__projects-right
+                      span.header__active-count
+                        | 8
+                      span.header__all-count
+                        | 11
+
+          li.header__item
+            a(href="javascript:void(0)").header__link
+              | Задачи для меня
+          li.header__item
+            a(href="javascript:void(0)").header__link
+              | База знаний
+          li.header__item
+            a(href="javascript:void(0)").header__link
+              | Все задачи
+          li.header__item
+            a(href="javascript:void(0)").header__link
+              | Просмотренные
+    .header__information
+      .header__notifications
+        .header__notification
+          img(src="images/header/star.svg")
+        .header__notification
+          img(src="images/header/notification.svg")
+      .header__user
+        .header__user-inage
+          img(src="images/header/avatar.png")
