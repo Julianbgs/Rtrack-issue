@@ -1,0 +1,97 @@
+.header
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 21px 80px
+  background-color: #ffffff
+
+.header__left
+  display: flex
+  align-items: center
+
+.header__logo
+  width: 128px
+  height: auto
+  margin-right: 60px
+
+  img
+    display: block
+    width: 100%
+
+.header__navigation
+
+.header__menu
+  display: flex
+  margin: 0
+  padding: 0
+
+.header__item
+  margin-right: 35px
+
+  &:last-child
+    margin-right: 0
+
+.header__link
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 17px
+  color: #212121
+  text-decoration: none
+
+.header__link-dropdown
+    position: relative
+    padding-right: 15px
+
+    &::before
+      content: ''
+      position: absolute
+      right: 0
+      top: 50%
+      width: 11px
+      height: 7px
+      background-image: url("./dropdown.svg")
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+      transform: translateY(-50%)
+
+.header__information
+  display: flex
+
+.header__notifications
+  display: flex
+  align-items: center
+  margin-right: 45px
+
+.header__notification
+  margin-right: 23px
+
+  &:last-child
+    margin-right: 0
+
+.header__user
+  position: relative
+  padding-right: 20px
+
+  &::before
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    width: 11px
+    height: 7px
+    background-image: url("./dropdown.svg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    transform: translateY(-50%)
+
+.header__user-inage
+  width: 42px
+  height: auto
+
+  img
+    width: 100%
