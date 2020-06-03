@@ -11,7 +11,11 @@
 
 .education__content
   flex-grow: 1
+  max-width: 880px
   margin-right: 50px
+
+  +max-w(1440)
+    max-width: 800px
 
   +max-w(1270)
     margin-right: 0
@@ -146,6 +150,7 @@
   align-items: flex-start
 
 .education__sidebar-item
+  display: block
   padding: 18px 30px
   border-bottom: 1px solid #E5E5E5
   font-family: 'Montserrat', sans-serif
@@ -154,6 +159,7 @@
   font-size: 15px
   line-height: 18px
   color: #212121
+  text-decoration: none
 
   &:last-child
     border-bottom: none
@@ -269,6 +275,9 @@ input[type="file"]
   display: inline-block
   padding: 6px 12px
   cursor: pointer
+
+  +max-w(760)
+    margin-bottom: 20px
 
 .education__review-description
   h4, p

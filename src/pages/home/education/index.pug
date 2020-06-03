@@ -1,6 +1,6 @@
 section.education
   .education__wrapper
-    .education__content
+    .education__content#education
       h2
         | Краткое обучение
       p
@@ -16,7 +16,7 @@ section.education
         | На ранней стадии я поймал себя на мысли, что большинство примеров — это простые сайты. Идея обычно соответствует
         | следующему формату: «Посмотрите на эти линии и 2 окружности: если предположить, что это набор масштабов, то окружность,
         | которая более удалена от центра, перевешивает, а если наклонить линию, то круг начинает скользить вниз и кажется, что тот, который справа, вот-вот упадёт».
-      h3
+      h3#information
         | Общая информация
       p
         | Если ранее бизнес рассматривал риск-подразделения как сдерживающий фактор развития, то сейчас они выступают в роли партнеров.
@@ -55,7 +55,7 @@ section.education
           | Фиксация и анализ своих эмоций с целью повышения эффективности профессиональной деятельности;
         li
           | Навык постоянного личностного развития,
-      h3
+      h3#quizes
         | Видео-уроки
       .education__quizes
         .education__quize
@@ -100,7 +100,7 @@ section.education
               | 15:00
           .education__quize-bottom
             | Факторы влияющие на вовлеченность в коллективе
-      h2
+      h2#review
         | Оставьте отзыв о вашем использовании!
       form.education__review
         textarea(placeholder="Напишите ваш отзыв...").education__review-area
@@ -119,11 +119,11 @@ section.education
 
     .education__sidebar
       .education__sidebar__wrapper
-        .education__sidebar-item.education__sidebar-item-active
+        a(href="#education").education__sidebar-item.education__sidebar-item-active
           | Краткое обучение
-        .education__sidebar-item
+        a(href="#information").education__sidebar-item
           | Общая информация
-        .education__sidebar-item
+        a(href="#quizes").education__sidebar-item
           | Видео-уроки
-        .education__sidebar-item
+        a(href="#review").education__sidebar-item
           | Отзывы

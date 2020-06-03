@@ -2,7 +2,7 @@
   .tasks
     h1.tasks__title
       | Мои задачи
-    .tasks__body
+    .tasks__body.sticky-container
       .tasks__issues
         ul.tasks__issues-list
           li(
@@ -184,12 +184,16 @@
 
 <script>
   import Multiselect from 'vue-multiselect'
+  import VueSticky from 'vue-sticky'
   import 'vue-multiselect/dist/vue-multiselect.min.css'
 
   export default {
     name: 'Tasks',
     components: {
-      Multiselect
+      Multiselect,
+    },
+    directives: {
+      VueSticky
     },
     data () {
       return {
