@@ -18,6 +18,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 /**
  * Webpack server config
@@ -352,6 +353,9 @@ const config = {
       'window.jQuery': 'jquery',
     }),
     new VueLoaderPlugin(),
+    new CopyPlugin([
+      { from: 'images/tasks', to: 'images/tasks' },
+    ]),
   ],
 };
 
