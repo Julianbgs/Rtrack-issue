@@ -184,16 +184,12 @@
 
 <script>
   import Multiselect from 'vue-multiselect'
-  import VueSticky from 'vue-sticky'
   import 'vue-multiselect/dist/vue-multiselect.min.css'
 
   export default {
     name: 'Tasks',
     components: {
       Multiselect,
-    },
-    directives: {
-      VueSticky
     },
     data () {
       return {
