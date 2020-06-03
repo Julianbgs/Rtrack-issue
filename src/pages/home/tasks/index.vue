@@ -26,7 +26,7 @@
                     template(slot="singleLabel", slot-scope="props")
                       span(v-bind:style="{backgroundColor: props.option.color}").option__desc-active
                         img.option__image(:src="props.option.img", alt="icon image")
-                        span(v-bind:style="{color: props.option.colorText}").option__title {{ props.option.title }}
+                        span(v-bind:style="{color: props.option.colorText}").option__title.option__title-wrap {{ props.option.title }}
                     template(slot="option", slot-scope="props")
                         .option__desc
                           img.option__image(:src="props.option.img", alt="icon image")
@@ -60,7 +60,7 @@
                     template(slot="singleLabel", slot-scope="props")
                       span(v-bind:style="{backgroundColor: props.option.color}").option__desc-active
                         img.option__image(:src="props.option.img", alt="icon image")
-                        span(v-bind:style="{color: props.option.colorText}").option__title {{ props.option.title }}
+                        span(v-bind:style="{color: props.option.colorText}").option__title.option__title-wrap {{ props.option.title }}
                     template(slot="option", slot-scope="props")
                       .option__desc
                         img.option__image(:src="props.option.img", alt="icon image")
