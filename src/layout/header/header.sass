@@ -235,8 +235,10 @@
 
 .header__user
   position: relative
-  padding: 21px 0
-  padding-right: 20px
+  padding: 21px 20px 21px 0
+
+  +max-w(760)
+    margin-right: 10px
 
   &:hover
     .header__user-popup
