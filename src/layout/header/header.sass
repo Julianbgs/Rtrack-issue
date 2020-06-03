@@ -72,6 +72,7 @@
       &:before
         top: 47%
         transform: rotate(180deg)
+        transition: 1s
 
   &:last-child
     margin-right: 0
@@ -84,6 +85,9 @@
   line-height: 17px
   color: #212121
   text-decoration: none
+
+  &:hover
+    color: #0066FF
 
 .header__link-dropdown
     position: relative
@@ -102,6 +106,7 @@
       background-position: center
       background-size: contain
       transform: translateY(-50%)
+      transition: 1s
 
 .header__projects-list
   position: absolute
@@ -246,6 +251,7 @@
 
     &::before
       transform: rotate(180deg)
+      transition: 1s
 
   &::before
     content: ''
@@ -259,6 +265,7 @@
     background-position: center
     background-size: contain
     transform: translateY(-50%)
+    transition: 1s
 
 .header__user-image
   width: 42px
@@ -310,6 +317,9 @@
   color: #212121
   text-decoration: none
 
+  &:hover
+    color: #0066FF
+
 .header__user-logout
   font-family: 'Montserrat', sans-serif
   font-style: normal
@@ -319,6 +329,9 @@
   color: #93979B
   text-decoration: none
 
+  &:hover
+    color: #0066FF
+
 .header__trigger
     display: none
     position: absolute
@@ -326,9 +339,9 @@
     height: 50px
     top: 10px
     left: 20px
-    background-color: #f3f3f3
+    background-color: #ffffff
     border-radius: 50%
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, .4)
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .4)
     z-index: 15
     cursor: pointer
 

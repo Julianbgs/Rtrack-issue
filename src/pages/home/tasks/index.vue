@@ -108,10 +108,12 @@
             ).tasks__filter-select
               template(slot="singleLabel", slot-scope="props")
                 span.option__select-active
-                  span.option__select-title {{ props.option.title }}
+                  span.option__select-title.option__select-title-active {{ props.option.title }}
               template(slot="option", slot-scope="props")
                 .option__desc
-                  input(type="checkbox").option__select-checkbox
+                  label.checkbox
+                    input(type="checkbox")
+                    .checkbox__hide
                   span.option__select-title {{ props.option.title }}
             multiselect(
               v-model="valueFilterSecond",
@@ -124,10 +126,12 @@
             ).tasks__filter-select
               template(slot="singleLabel", slot-scope="props")
                 span.option__select-active
-                  span.option__select-title {{ props.option.title }}
+                  span.option__select-title.option__select-title-active {{ props.option.title }}
               template(slot="option", slot-scope="props")
                 .option__desc
-                  input(type="checkbox").option__select-checkbox
+                  label.checkbox
+                    input(type="checkbox")
+                    .checkbox__hide
                   span.option__select-title {{ props.option.title }}
             multiselect(
               v-model="valueFilterThird",
@@ -140,10 +144,12 @@
             ).tasks__filter-select
               template(slot="singleLabel", slot-scope="props")
                 span.option__select-active
-                  span.option__select-title {{ props.option.title }}
+                  span.option__select-title.option__select-title-active {{ props.option.title }}
               template(slot="option", slot-scope="props")
                 .option__desc
-                  input(type="checkbox").option__select-checkbox
+                  label.checkbox
+                    input(type="checkbox")
+                    .checkbox__hide
                   span.option__select-title {{ props.option.title }}
             multiselect(
               v-model="valueFilterFourth",
@@ -156,10 +162,12 @@
             ).tasks__filter-select
               template(slot="singleLabel", slot-scope="props")
                 span.option__select-active
-                  span.option__select-title {{ props.option.title }}
+                  span.option__select-title.option__select-title-active {{ props.option.title }}
               template(slot="option", slot-scope="props")
                 .option__desc
-                  input(type="checkbox").option__select-checkbox
+                  label.checkbox
+                    input(type="checkbox")
+                    .checkbox__hide
                   span.option__select-title {{ props.option.title }}
             multiselect(
               v-model="valueFilterFifth",
@@ -172,10 +180,12 @@
             ).tasks__filter-select
               template(slot="singleLabel", slot-scope="props")
                 span.option__select-active
-                  span.option__select-title {{ props.option.title }}
+                  span.option__select-title.option__select-title-active {{ props.option.title }}
               template(slot="option", slot-scope="props")
                 .option__desc
-                  input(type="checkbox").option__select-checkbox
+                  label.checkbox
+                    input(type="checkbox")
+                    .checkbox__hide
                   span.option__select-title {{ props.option.title }}
         a(href="javascript:void(0)").tasks__filter-reset
           .tasks__filter-reset-btn

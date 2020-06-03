@@ -266,6 +266,12 @@
   border-radius: 50px
   text-decoration: none
 
+  &:hover
+    background-color: #CDD3DB
+
+    .tasks__filter-load-btn
+      color: #ffffff
+
 .tasks__filter-load-btn
   font-family: 'Montserrat', sans-serif
   font-style: normal
@@ -275,12 +281,16 @@
   color: #212121
 
 .option__select-title
+  padding-left: 25px
   font-family: 'Montserrat', sans-serif
   font-style: normal
   font-weight: normal
   font-size: 14px
   line-height: 18px
   color: #93979B
+
+.option__select-title-active
+  padding-left: 0
 
 .tasks__filter-reset
   display: flex
@@ -292,6 +302,13 @@
   border-radius: 50px
   text-decoration: none
 
+  &:hover
+    background-color: #CDD3DB
+
+    .tasks__filter-reset-btn
+      color: #ffffff
+
+
 .tasks__filter-reset-btn
   font-family: 'Montserrat', sans-serif
   font-style: normal
@@ -299,4 +316,32 @@
   font-size: 15px
   line-height: 18px
   color: #212121
+
+.checkbox input
+  position: absolute
+  z-index: -1
+  opacity: 0
+  margin: 10px 0 0 20px
+
+.checkbox__hide
+  position: relative
+  padding: 0 0 0 20px
+  cursor: pointer
+
+.checkbox__hide:before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 17px
+  height: 17px
+  border: 1px solid #CDD3DB
+  border-radius: 5px
+  background: #FFFFFF
+  transition: .2s
+
+.checkbox input:checked + .checkbox__hide:before
+  background: #CDD3DB
+
+
 
