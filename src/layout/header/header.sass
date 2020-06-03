@@ -9,16 +9,20 @@
   max-width: 1440px
   width: 100%
   margin: 0 auto
-  padding: 21px 80px
 
 .header__left
+  position: relative
   display: flex
   align-items: center
+  padding: 21px 0 21px 80px
 
 .header__logo
   width: 128px
   height: auto
   margin-right: 60px
+
+  +max-w(760)
+    margin-right: 0
 
   img
     display: block
@@ -28,6 +32,32 @@
   display: flex
   margin: 0
   padding: 0
+
+  +max-w(1270)
+    display: none
+
+.header__menu-mobile
+  position: absolute
+  left: 20px
+  top: 90px
+  z-index: 110
+  display: none
+  width: 200px
+  padding: 10px
+  background-color: #ffffff
+
+.header__item--bottom
+  margin-bottom: 15px
+
+.header__item-mobile
+  position: relative
+  display: none
+
+  +max-w(1270)
+    display: block
+
+  +max-w(760)
+    display: none
 
 .header__item
   position: relative
@@ -83,6 +113,19 @@
   border: 1px solid #CDD3DB
   border-radius: 5px
   background: #FFFFFF
+
+  &::before, &::after
+    content: ''
+    position: absolute
+    left: 215px
+    top: -20px
+    border: 10px solid transparent
+    border-bottom: 10px solid #CDD3DB
+
+  &::after
+    border-bottom: 10px solid white
+    top: -19px
+
 
 .header__projects-wrapper
   height: 305px
@@ -158,11 +201,19 @@
 
 .header__information
   display: flex
+  padding-right: 80px
+
+  +max-w(760)
+    flex-shrink: 0
+    padding-right: 0
 
 .header__notifications
   display: flex
   align-items: center
   margin-right: 45px
+
+  +max-w(500)
+    display: none
 
 .header__notification
   margin-right: 23px
@@ -170,9 +221,29 @@
   &:last-child
     margin-right: 0
 
+.header__star
+  svg
+    &:hover
+      path
+        fill: #FFB661
+
+.header__alert
+  svg
+    &:hover
+      path
+        fill: #34ad09
+
 .header__user
   position: relative
+  padding: 21px 0
   padding-right: 20px
+
+  &:hover
+    .header__user-popup
+      display: block
+
+    &::before
+      transform: rotate(180deg)
 
   &::before
     content: ''
@@ -187,9 +258,124 @@
     background-size: contain
     transform: translateY(-50%)
 
-.header__user-inage
+.header__user-image
   width: 42px
   height: auto
 
   img
     width: 100%
+
+.header__user-popup
+  position: absolute
+  top: 90px
+  right: 0
+  z-index: 100
+  display: none
+  width: 200px
+  padding: 15px 20px
+  border: 1px solid #CDD3DB
+  background-color: #FFFFFF
+
+  &::before, &::after
+    content: ''
+    position: absolute
+    right: 28px
+    top: -20px
+    border: 10px solid transparent
+    border-bottom: 10px solid #CDD3DB
+
+  &::after
+    border-bottom: 10px solid white
+    top: -19px
+
+.header__user-list
+  margin: 0
+  padding: 0
+
+.header__user-item
+  margin-bottom: 11px
+
+  &:last-child
+    padding-bottom: 15px
+    border-bottom: 1px solid #CDD3DB
+
+.header__user-link
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 17px
+  color: #212121
+  text-decoration: none
+
+.header__user-logout
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 17px
+  color: #93979B
+  text-decoration: none
+
+.header__trigger
+    display: none
+    position: absolute
+    width: 50px
+    height: 50px
+    top: 10px
+    left: 20px
+    background-color: #f3f3f3
+    border-radius: 50%
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .4)
+    z-index: 15
+    cursor: pointer
+
+    +max-w(1270)
+      display: block
+
+
+    span
+      display: block
+      height: 2px
+      width: 18px
+      background-color: #000
+      position: absolute
+      left: 50%
+      margin-left: -9px
+      top: 50%
+      margin-top: -1px
+
+
+    span:first-of-type
+      transition: all 0.2s
+      margin-top: -6px
+      content: ''
+
+    span:last-of-type
+      transition: all 0.2s
+      margin-top: 4px
+      content: ''
+
+
+
+.header__trigger.js-trigger-active
+  background-image: linear-gradient(to top, #fe4e3a 0%, #f6373d 50%, #ff5c34 100%)
+
+  span:nth-of-type(2)
+    display: none
+
+
+  span
+    background-color: #fff
+
+    &:first-of-type
+      transform: rotate(135deg)
+      margin-top: 0
+
+
+    &:last-of-type
+      transform: rotate(-134deg)
+      margin-top: 0
+
+
+
