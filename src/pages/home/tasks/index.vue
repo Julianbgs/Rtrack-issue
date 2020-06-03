@@ -43,7 +43,7 @@
                     template(slot="singleLabel", slot-scope="props")
                       span(v-bind:style="{backgroundColor: props.option.color}").option__desc-active
                         img.option__image(:src="props.option.img", alt="icon image")
-                        span(v-bind:style="{color: props.option.colorText}").option__title {{ props.option.title }}
+                        span(v-bind:style="{color: props.option.colorText}").option__title.option__title-wrap {{ props.option.title }}
                     template(slot="option", slot-scope="props")
                       .option__desc
                         img.option__image(:src="props.option.img", alt="icon image")
@@ -223,22 +223,22 @@
           { img: 'images/tasks/icon1.svg', title: 'Новый', color: '#F9E6D9', colorText: '#FF8330' }
         ],
         valueArraySecond: [
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5', colorText: '#93979B'},
         ],
         optionsSecond: [
-          { img: 'images/tasks/icon2.svg', title: 'Владислав', color: '#D9F5E6', colorText: '#32C979'},
-          { img: 'images/tasks/icon2.svg', title: 'Дмитрий', color: '#25B419', colorText: '#065535' },
-          { img: 'images/tasks/icon2.svg', title: 'Константин', color: '#F1F3F5' , colorText: '#93979B'},
-          { img: 'images/tasks/icon2.svg', title: 'Артур', color: '#F9E6D9', colorText: '#FF8330' }
+          { img: 'images/tasks/icon2.svg', title: 'Владислав Рыбкин', color: '#D9F5E6', colorText: '#32C979'},
+          { img: 'images/tasks/icon2.svg', title: 'Дмитрий Аравин', color: '#25B419', colorText: '#065535' },
+          { img: 'images/tasks/icon2.svg', title: 'Константин Сергеев', color: '#F1F3F5' , colorText: '#93979B'},
+          { img: 'images/tasks/icon2.svg', title: 'Артур Дробный', color: '#F9E6D9', colorText: '#FF8330' }
         ],
         valueArrayThird: [
           { img: 'images/tasks/icon3.svg', title: 'Максимум', color: '#F9E6D9', colorText: '#FF8330'},
